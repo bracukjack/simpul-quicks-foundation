@@ -1,6 +1,7 @@
 export { default as ArrowLeftIcon } from "@/../public/icons/arrowleft.svg";
 export { default as ArrowDownIcon } from "@/../public/icons/arrowdown.svg";
 export { default as BookMarksIcon } from "@/../public/icons/bookmarks.svg";
+export { default as SaveIcon } from "@/../public/icons/save.svg";
 export { default as CheckIcon } from "@/../public/icons/check.svg";
 export { default as CheckBoxIcon } from "@/../public/icons/checkbox.svg";
 export { default as ClockIcon } from "@/../public/icons/clock.svg";
@@ -9,7 +10,8 @@ export { default as DocsIcon } from "@/../public/icons/docs.svg";
 export { default as DuplicateIcon } from "@/../public/icons/duplicate.svg";
 export { default as LinkIcon } from "@/../public/icons/link.svg";
 export { default as ListIcon } from "@/../public/icons/list.svg";
-export { default as MoreHorizIcon } from "@/../public/icons/moreHoriz.svg";
+export { default as LoadingIcon } from "@/../public/icons/loader.svg";
+export { default as MoreIcon } from "@/../public/icons/more.svg";
 export { default as PencilIcon } from "@/../public/icons/pencil.svg";
 export { default as PlusIcon } from "@/../public/icons/plus.svg";
 export { default as ReaderBookIcon } from "@/../public/icons/readerbook.svg";
