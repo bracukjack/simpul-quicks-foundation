@@ -66,15 +66,17 @@ const Detail = () => {
             const isUser = participant?.user || false;
             const isMyMessage = participant?.user === true;
             let participantColor;
-            if (isUser) {
-              participantColor = "ChtPurple";
+            let messageBgColor;
+            let messageTextColor;
+            if (participantColor === "ChtPurple") {
+              messageBgColor = "bg-ChtPurple-100";
+              messageTextColor = "text-ChtPurple-500";
+            } else if (participantColor === "ChtGreen") {
+              messageBgColor = "bg-ChtGreen-100";
+              messageTextColor = "text-ChtGreen-500";
             } else {
-              const participantId = participant?.id_participant || 0;
-              if (participantId % 2 === 0) {
-                participantColor = "ChtGreen";
-              } else {
-                participantColor = "ChtOrange";
-              }
+              messageBgColor = "bg-ChtOrange-100";
+              messageTextColor = "text-ChtOrange-500";
             }
 
             const isFirstMessage =
@@ -100,9 +102,7 @@ const Detail = () => {
                 >
                   <div className="mb-1 flex items-center">
                     <div>
-                      <p
-                        className={`font-semibold text-${participantColor}-500`}
-                      >
+                      <p className={`font-semibold ${messageTextColor}`}>
                         {!isMyMessage && !isUser
                           ? participant?.name_participant
                           : isMyMessage && isUser
@@ -147,7 +147,7 @@ const Detail = () => {
                       )}
                     </div>
                     <div
-                      className={`bg-${participantColor}-100 flex w-fit flex-col justify-start gap-y-2 rounded-md p-4`}
+                      className={`${messageBgColor} flex w-fit flex-col justify-start gap-y-2 rounded-md p-4`}
                     >
                       <p className="text-gray-800">{msg.message}</p>
                       <p className="text-xs text-gray-500">

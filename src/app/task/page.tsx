@@ -156,11 +156,9 @@ const Task = () => {
                       <div className="flex items-center gap-x-2">
                         <PencilIcon className="fill-PriBlue h-5 w-5" />
                         <p>{task.description}</p>
-
-                        <TextArea label={""} value={""} onChange={() => {}} />
                       </div>
 
-                      <div className="flex items-center gap-x-5 rounded-md bg-gray-50 px-2 py-1">
+                      <div className="mt-2 flex items-center gap-x-5 rounded-md bg-gray-50 px-2 py-3">
                         <SaveIcon
                           className="fill-PriBlue h-5 w-5"
                           onClick={() =>
