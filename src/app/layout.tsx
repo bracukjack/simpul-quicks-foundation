@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Inter, Lato } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/component/NavBarComponent";
 
-const lato = Lato({ weight: ["400", "700"], subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Simple Quicks",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body className={inter.className}>
         <div className="flex h-screen flex-col items-end justify-end gap-y-5 bg-black p-2 lg:p-20">
           <div className="w-full bg-white lg:w-2/3 ">
             <div className="overflow-y-auto">{children}</div>
